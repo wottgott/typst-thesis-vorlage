@@ -1,14 +1,15 @@
 # ============================================================
 #  EINSTELLUNGEN
-#  Hier steht alles, was du an der Arbeit "einstellen" kannst.
-#  Wichtig: Die Einrückungen (Leerzeichen am Zeilenanfang) nicht
-#  verändern, nur die Werte hinter dem Doppelpunkt anpassen.
+#  Alles, was sich an der Arbeit einstellen lässt, steht in dieser Datei.
+#  Verändere nur die Werte hinter dem Doppelpunkt und lass die Einrückungen
+#  (die Leerzeichen am Zeilenanfang) unverändert, weil die Datei sonst
+#  nicht mehr gelesen werden kann.
 # ============================================================
 
 # Sprache der Arbeit: "de" (Deutsch) oder "en" (Englisch)
 lang: de
 
-# Abgabedatum, so geschrieben: "JJJJ-MM-TT". Leer lassen ("") = heutiges Datum.
+# Abgabedatum im Format "JJJJ-MM-TT". Bleibt das Feld leer (""), nimmt die Vorlage das heutige Datum.
 date: "2027-01-31"
 
 # ------------------------------------------------------------
@@ -25,26 +26,27 @@ data:
             Name: Prof. Dr. Erstprüfer/in
         second:
             Name: Prof. Dr. Zweitprüfer/in
-        # Praxisbetreuer im Unternehmen: die drei Zeilen darunter
-        # einkommentieren (das "#" am Zeilenanfang entfernen).
+        # Gibt es einen Praxisbetreuer im Unternehmen, entfernst du bei den
+        # drei Zeilen darunter das "#" am Zeilenanfang und trägst die Daten ein.
         # external:
         #     Name: Vorname Nachname
         #     Company: Firmenname
 
 # ------------------------------------------------------------
 #  AUSSEHEN
-#  Zahlen immer mit Einheit in Anführungszeichen schreiben,
-#  z. B. "2.5cm" (Zentimeter), "11pt" (Punkt), "1.2em" (Schriftgröße).
-#  Die Werte unten sind die HdM-Vorgaben in leicht verkleinerter Form.
+#  Zahlen schreibst du immer mit Einheit in Anführungszeichen, etwa
+#  "2.5cm" (Zentimeter), "11pt" (Punkt) oder "1.2em" (ein Vielfaches der
+#  Schriftgröße). Die Werte unten entsprechen den HdM-Vorgaben in leicht
+#  verkleinerter Form.
 # ------------------------------------------------------------
 layout:
     Type: bachelor            # bachelor oder master
     Study: Medieninformatik   # Studiengang, steht auf der Titelseite
     Degree: Bachelor of Science
     Institute: Hochschule der Medien Stuttgart
-    Location: Stuttgart       # Ort bei der Unterschrift der Erklärung
+    Location: Stuttgart       # Ort in der Ehrenwörtlichen Erklärung
 
-    # Schriftarten (Arial gibt es auf Windows und Mac).
+    # Schriftarten (Arial ist unter Windows und auf dem Mac vorhanden).
     fonts:
         body: Arial                     # Fließtext
         heading: Arial                     # Überschriften
@@ -54,7 +56,7 @@ layout:
         margin-top: "3.5cm"
         margin-bottom: "2.5cm"
         margin-x: "2.5cm"         # links und rechts
-        header-start-page: 3      # ab dieser Seite gibt es Kopf- und Fußzeile
+        header-start-page: 3      # ab dieser Seite erscheinen Kopf- und Fußzeile
         header-logo-height: "2.5em"
 
     # Schrift und Abstände

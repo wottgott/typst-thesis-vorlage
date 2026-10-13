@@ -1,20 +1,14 @@
 # Beispiele zum Abschauen
 
-Dieses Kapitel zeigt, wie man Quellen, Bilder, Tabellen und Verweise setzt.
-Wenn du es nicht mehr brauchst: Datei löschen und die Zeile in `main.typ`
-entfernen.
+Dieses Kapitel zeigt, wie Quellen, Bilder, Tabellen und Verweise gesetzt werden. Sobald du die Beispiele nicht mehr brauchst, kannst du die Datei löschen und ihre Zeile in der Kapitelliste von `main.typ` entfernen.
 
 ## Quellen zitieren
 
-Quellen stehen in `literatur/literatur.bib`. Im Text zitierst du mit dem
-Kurznamen des Eintrags, in geschweiften Klammern mit einem `@` davor.
-Beispiel mit Seitenzahl: Das steht so im Buch {@mustermann2024 S. 12}.
-Ohne Seitenzahl: Das ist allgemein bekannt {@mustermann2024}.
+Die Quellen stehen in `literatur/literatur.bib`, und im Text zitierst du sie mit dem Kurznamen des Eintrags in geschweiften Klammern, dem ein `@` vorangestellt ist. Mit Seitenzahl sieht das so aus: Diese Aussage steht so im Buch {@mustermann2024 S. 12}. Ohne Seitenzahl genügt der Kurzname allein, wie bei dieser allgemein bekannten Aussage {@mustermann2024}.
 
 ## Bilder
 
-Lege das Bild in den Ordner `bilder/` (PNG, JPG oder SVG). Ein Bild mit
-Beschriftung und Verweis darauf:
+Das Bild legst du im Ordner `bilder/` ab, als PNG, JPG oder SVG. Der folgende Block zeigt ein Bild mit Beschriftung und einem Namen, über den du im Text darauf verweisen kannst:
 
 <!--raw-typst
 #figure(
@@ -23,7 +17,7 @@ Beschriftung und Verweis darauf:
 ) <abb-logo>
 -->
 
-Im Text verweist du darauf mit {@abb-logo}.
+Auf dieses Bild verweist du im Text mit {@abb-logo}.
 
 ## Tabellen
 
@@ -39,17 +33,14 @@ Im Text verweist du darauf mit {@abb-logo}.
 ) <tab-beispiel>
 -->
 
-Verweis auf die Tabelle: {@tab-beispiel}.
+Der Verweis auf diese Tabelle lautet {@tab-beispiel}.
 
 ## Fußnoten und Abkürzungen
 
-Eine Fußnote setzt du so:{fn:Text der Fußnote.}
-
-Eine Abkürzung aus `abkuerzungen.yaml` setzt du mit {abk:API}. Beim ersten
-Mal steht sie ausgeschrieben da, danach nur noch als Kürzel: {abk:API}.
+Eine Fußnote entsteht direkt hinter dem Wort, zu dem sie gehört:{fn:Das ist der Text der Fußnote.} Abkürzungen stehen in `abkuerzungen.yaml` und werden mit {abk:API} eingesetzt, wobei sie beim ersten Auftreten ausgeschrieben erscheinen und danach nur noch als Kürzel, hier also {abk:API}.
 
 ## Formeln
 
-Für Formeln kopierst du diese Zeile und änderst die Formel:
+Für eine Formel kopierst du die folgende Zeile und änderst den Inhalt zwischen den Dollarzeichen:
 
 <!--raw-typst $ E = m c^2 $-->

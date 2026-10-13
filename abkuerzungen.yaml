@@ -1,7 +1,7 @@
-# Abkürzungsverzeichnis. Jeder Eintrag besteht aus drei Zeilen
-# (key = Kurzname zum Verweisen, short = Abkürzung, long = ausgeschrieben).
-# Ein Beispiel pro Zeile; weitere Einträge einfach darunter kopieren.
-# Leere Liste (nur "[]") = es gibt kein Abkürzungsverzeichnis.
+# Abkürzungsverzeichnis. Jeder Eintrag besteht aus drei Zeilen: key ist der
+# Kurzname, mit dem du im Text darauf verweist, short ist die Abkürzung und
+# long die ausgeschriebene Form. Weitere Einträge kopierst du einfach darunter.
+# Steht in der Datei nur "[]", entfällt das Abkürzungsverzeichnis.
 - key: API
   short: API
   long: Application Programming Interface

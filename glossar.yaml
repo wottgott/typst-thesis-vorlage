@@ -1,5 +1,5 @@
-# Glossar (Begriffserklärungen). Leer lassen ("[]") = es gibt kein Glossar.
-# Beispiel zum Ausprobieren: Zeilen darunter einkommentieren.
+# Glossar mit Begriffserklärungen. Steht in der Datei nur "[]", entfällt das Glossar.
+# Zum Ausprobieren entfernst du das "#" vor den Zeilen darunter und löschst die "[]".
 []
 # - key: workflow
 #   short: Workflow

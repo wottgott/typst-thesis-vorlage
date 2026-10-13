@@ -1,7 +1,7 @@
 // ============================================================
 //  HAUPTDATEI
-//  Hier musst du normalerweise nur die Kapitelliste ändern
-//  (siehe unten). Alle anderen Einstellungen stehen in
+//  In dieser Datei änderst du normalerweise nur die Kapitelliste
+//  (siehe unten), denn alle übrigen Einstellungen stehen in
 //  einstellungen.yaml.
 // ============================================================
 
@@ -11,7 +11,7 @@
 
 #let einstellungen = yaml("einstellungen.yaml")
 
-// Abgabedatum aus den Einstellungen ("JJJJ-MM-TT"); leer = heute.
+// Abgabedatum aus den Einstellungen ("JJJJ-MM-TT"), bei leerem Feld das heutige Datum.
 #let datum = {
   let d = einstellungen.at("date", default: "")
   if d == "" or d == none {
@@ -22,16 +22,16 @@
   }
 }
 
-// Markdown-Datei (.md) einlesen und setzen. Dateien, die auf ".typ" enden,
-// werden stattdessen als Typst-Datei eingebunden.
+// Liest eine Markdown-Datei (.md) ein und setzt sie. Dateien, die auf ".typ"
+// enden, werden stattdessen als Typst-Datei eingebunden.
 //
-// Zusätzlich zu normalem Markdown gibt es vier Kurzschreibweisen
+// Zusätzlich zu normalem Markdown gibt es Kurzschreibweisen
 // (Beispiele in kapitel/99-beispiele.md):
 //   {@schluessel}            Quelle zitieren
 //   {@schluessel S. 12}      Quelle mit Seitenzahl zitieren
 //   {fn:Text}                Fußnote
 //   {abk:API}                Abkürzung (steht beim ersten Mal ausgeschrieben da)
-// Mit {@abb-name} oder {@tab-name} verweist man auf Bilder und Tabellen.
+// Mit {@abb-name} oder {@tab-name} verweist du auf Bilder und Tabellen.
 #let vorverarbeiten(text) = {
   text
   .replace(regex("[{]fn:([^}]*)[}]"), m => "<!--raw-typst#footnote[" + m.captures.at(0) + "]-->")
@@ -47,22 +47,22 @@
 #let datei(pfad) = if pfad.ends-with(".typ") { include pfad } else { markdown(pfad) }
 
 // ------------------------------------------------------------
-//  Optionale Teile: auskommentieren (// davor) oder auf none setzen,
-//  wenn du sie nicht brauchst.
+//  Optionale Teile: Wenn du sie nicht brauchst, setzt du ein // davor
+//  oder den Wert auf none.
 // ------------------------------------------------------------
 #let kurzfassung = markdown("kapitel/00-kurzfassung.md")
 #let abstract = markdown("kapitel/00-abstract.md")
 #let abkuerzungen = yaml("abkuerzungen.yaml")
 #let glossar = yaml("glossar.yaml")
-// Danksagung: Datei anlegen und die Zeile darunter durch diese ersetzen:
+// Für eine Danksagung legst du die Datei an und ersetzt die Zeile darunter durch diese:
 //   #let danksagung = markdown("kapitel/00-danksagung.md")
 #let danksagung = none
 
 // ------------------------------------------------------------
 //  KAPITELLISTE
-//  Ein Kapitel = eine Zeile. Die Reihenfolge hier ist die
-//  Reihenfolge in der Arbeit. Neues Kapitel: Datei in "kapitel/"
-//  anlegen und hier eine Zeile ergänzen.
+//  Jedes Kapitel steht in einer eigenen Zeile, und die Reihenfolge hier
+//  bestimmt die Reihenfolge in der Arbeit. Für ein neues Kapitel legst du
+//  eine Datei in "kapitel/" an und ergänzt hier eine Zeile.
 // ------------------------------------------------------------
 #let kapitel = (
   "kapitel/01-einleitung.md",
@@ -73,7 +73,7 @@
   // "kapitel/05-fazit.md",
 )
 
-// Anhang (optional): Datei anlegen und hier eintragen, sonst none.
+// Anhang (optional): Dafür legst du eine Datei an und trägst sie hier ein, sonst bleibt es none.
 #let anhang = none
 // #let anhang = markdown("kapitel/anhang.md")
 
