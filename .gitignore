@@ -1,0 +1,6 @@
+# Erzeugte PDFs
+*.pdf
+
+# Betriebssystem
+.DS_Store
+Thumbs.db

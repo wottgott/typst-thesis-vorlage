@@ -1,0 +1,73 @@
+# ============================================================
+#  EINSTELLUNGEN
+#  Hier steht alles, was du an der Arbeit "einstellen" kannst.
+#  Wichtig: Die Einrückungen (Leerzeichen am Zeilenanfang) nicht
+#  verändern, nur die Werte hinter dem Doppelpunkt anpassen.
+# ============================================================
+
+# Sprache der Arbeit: "de" (Deutsch) oder "en" (Englisch)
+lang: de
+
+# Abgabedatum, so geschrieben: "JJJJ-MM-TT". Leer lassen ("") = heutiges Datum.
+date: "2027-01-31"
+
+# ------------------------------------------------------------
+#  ANGABEN ZUR ARBEIT (Titelseite und Erklärung)
+# ------------------------------------------------------------
+data:
+    title: "Titel der Arbeit"
+    subtitle: "Untertitel der Arbeit"
+    authors:
+        - Name: Vorname Nachname
+          StudentId: 12345
+    supervisors:
+        first:
+            Name: Prof. Dr. Erstprüfer/in
+        second:
+            Name: Prof. Dr. Zweitprüfer/in
+        # Praxisbetreuer im Unternehmen: die drei Zeilen darunter
+        # einkommentieren (das "#" am Zeilenanfang entfernen).
+        # external:
+        #     Name: Vorname Nachname
+        #     Company: Firmenname
+
+# ------------------------------------------------------------
+#  AUSSEHEN
+#  Zahlen immer mit Einheit in Anführungszeichen schreiben,
+#  z. B. "2.5cm" (Zentimeter), "11pt" (Punkt), "1.2em" (Schriftgröße).
+#  Die Werte unten sind die HdM-Vorgaben in leicht verkleinerter Form.
+# ------------------------------------------------------------
+layout:
+    Type: bachelor            # bachelor oder master
+    Study: Medieninformatik   # Studiengang, steht auf der Titelseite
+    Degree: Bachelor of Science
+    Institute: Hochschule der Medien Stuttgart
+    Location: Stuttgart       # Ort bei der Unterschrift der Erklärung
+
+    # Schriftarten (Arial gibt es auf Windows und Mac).
+    fonts:
+        body: Arial                     # Fließtext
+        heading: Arial                     # Überschriften
+
+    # Seitenränder
+    page:
+        margin-top: "3.5cm"
+        margin-bottom: "2.5cm"
+        margin-x: "2.5cm"         # links und rechts
+        header-start-page: 3      # ab dieser Seite gibt es Kopf- und Fußzeile
+        header-logo-height: "2.5em"
+
+    # Schrift und Abstände
+    typography:
+        body-size: "11pt"         # Schriftgröße Fließtext
+        body-leading: "1.2em"     # Abstand zwischen den Zeilen
+        body-spacing: "1.8em"     # Abstand zwischen Absätzen
+        caption-align: left       # Bildunterschriften: left, center oder right
+        heading-leading: "0.5em"  # Zeilenabstand innerhalb einer Überschrift
+        heading-above: "1.8em"    # Abstand über einer Überschrift
+        heading-below: "1em"      # Abstand unter einer Überschrift
+        heading-sizes:
+            h1: "20pt"            # Kapitel
+            h2: "16pt"            # Abschnitt
+            h3: "14pt"            # Unterabschnitt
+            h4: "12pt"

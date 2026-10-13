@@ -1,0 +1,10 @@
+# Abkürzungsverzeichnis. Jeder Eintrag besteht aus drei Zeilen
+# (key = Kurzname zum Verweisen, short = Abkürzung, long = ausgeschrieben).
+# Ein Beispiel pro Zeile; weitere Einträge einfach darunter kopieren.
+# Leere Liste (nur "[]") = es gibt kein Abkürzungsverzeichnis.
+- key: API
+  short: API
+  long: Application Programming Interface
+- key: KI
+  short: KI
+  long: Künstliche Intelligenz

@@ -1,0 +1,6 @@
+# Glossar (Begriffserklärungen). Leer lassen ("[]") = es gibt kein Glossar.
+# Beispiel zum Ausprobieren: Zeilen darunter einkommentieren.
+[]
+# - key: workflow
+#   short: Workflow
+#   description: Eine strukturierte Abfolge von Aufgaben.
